@@ -1,0 +1,114 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../../public/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.boxContainer {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(31, 31, 41, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  margin-top: 2rem;
+  background-color: rgba(31, 31, 41, 0.7);
+}
+
+.aboutHead {
+  width: 100%;
+  text-align: center;
+  height: 5rem;
+  padding-top: 1rem;
+  background-color: rgb(31, 31, 41);
+  color: #e9a901;
+}
+
+.textContainer {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+.aboutBox {
+  background-color: rgba(31, 31, 41, 0.8);
+}
+
+.textHead {
+  color: #e9a901;
+  font-size: 2rem;
+}
+
+.about {
+  color: whitesmoke;
+}
+
+.para1 {
+  color: whitesmoke;
+  text-align: justify;
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .boxContainer {
+    height: auto;
+  }
+  .textContainer {
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+  .boxContainer {
+    height: 90%;
+  }
+  .para1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 801px) {
+  .boxContainer {
+    height: 90%;
+  }
+  .para1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .para1 {
+    font-size: 1.7rem;
+  }
+  .boxContainer {
+    height: 93%;
+  }
+  .container {
+    height: auto;
+  }
+  .boxContainer {
+    height: auto;
+  }
+}

@@ -1,0 +1,172 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(31, 31, 41, 1);
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 4rem;
+}
+
+.imgContainer {
+  height: 60%;
+  width: 33%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.boxContainer {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  height: 6rem;
+  width: 100%;
+  margin: auto;
+  background-color: #e9a901;
+  padding-top: 1.2rem;
+  font-weight: bold;
+}
+
+.heading {
+  width: 100%;
+  background-color: white;
+  height: 8rem;
+  text-align: center;
+  display: flex;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  margin: auto;
+}
+
+.textHead {
+  width: 80%;
+  text-align: center;
+  color: #e9a901;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.para {
+  color: whitesmoke;
+  width: 80%;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.name {
+  margin-top: 2rem;
+  height: 6rem;
+  background-color: dimgrey;
+  color: whitesmoke;
+  padding-left: 3rem;
+  padding-top: 0.7rem;
+}
+
+.md {
+  padding-right: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .imgContainer {
+    display: none;
+  }
+  .textHead {
+    margin-top: 2rem;
+  }
+  .boxContainer {
+    width: 100%;
+  }
+  .textContainer {
+    height: auto;
+  }
+  .container {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 799px) {
+  .textHead {
+    font-size: 1.4rem;
+  }
+  .para {
+    font-size: 1.4rem;
+  }
+  .imgContainer {
+    height: 50%;
+    width: 40%;
+  }
+  .name {
+    font-size: large;
+    height: 8rem;
+  }
+  .textContainer {
+    height: 100%;
+    margin-top: 3rem;
+  }
+  .md {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .textHead {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 1.5rem;
+  }
+  .imgContainer {
+    height: 50%;
+    width: 40%;
+  }
+  .name {
+    font-size: 1.5rem;
+    height: 8rem;
+  }
+  .md {
+    font-size: large;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  .imgContainer {
+    height: 30rem;
+    width: 40%;
+  }
+  .name {
+    font-size: 1.5rem;
+    height: 8rem;
+  }
+  .textHead {
+    font-size: 1.7rem;
+  }
+  .para {
+    font-size: 1.7rem;
+  }
+  .textContainer {
+    height: 1366px;
+  }
+  .container {
+    height: 1366px;
+  }
+  .md {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    font-size: larger;
+    padding-right: 0;
+  }
+}

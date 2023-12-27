@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  background-image: url("../public/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg");
+}
+
+.about {
+  background-image: url("../public/aboutbg.jpg");
+}
+
+.contact {
+  background-image: url("../public/contactbg.jpg");
+}
+
+.service {
+  background-image: url("../public/servicesbg.jpg");
+}
+
+.project {
+  background-image: url("../public/projectbg.jpg");
+}
+
+.mySwiper {
+  overflow-y: hidden;
+  transition: filter 0.3s ease;
+}
+
+.nav {
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid;
+  padding-bottom: 2rem;
+}
+
+.btn-close {
+  position: relative;
+  top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .drawer {
+    display: block;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .btn {
+    position: fixed;
+    right: 0.7rem;
+    top: 1rem;
+  }
+}

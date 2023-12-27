@@ -1,0 +1,85 @@
+.container {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 4rem;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.img {
+  height: 60rem;
+  width: 40%;
+}
+
+.visionContainer {
+  height: 80%;
+  width: 70%;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  background: #1f1f29;
+  height: 6rem;
+  padding-top: 1.2rem;
+  color: #e9a901;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.textContainer {
+  margin-top: 3rem;
+}
+
+.textHead {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.para {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: justify;
+}
+
+.mission {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .img {
+    display: none;
+  }
+  .visionContainer {
+    width: 100%;
+    background-color: #1f1f29;
+    color: whitesmoke;
+    height: 100%;
+  }
+  .heading {
+    padding-top: 2rem;
+    background-color: #e9a901;
+    color: #1f1f29;
+  }
+  .textContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 98vw;
+    gap: 1rem;
+  }
+  .img {
+    width: 50%;
+  }
+}
