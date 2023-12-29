@@ -5,6 +5,8 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function Form() {
+  const [animate, setAnimate] = useState(false);
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [user, setUser] = useState({
     firstName: "",
@@ -48,8 +50,30 @@ export default function Form() {
       }}
       className={style.container}
     >
-      <div className={style.contactform}>
-        <form className={style.form} onSubmit={handleSubmit}>
+      <motion.div
+        className={style.contactform}
+        onViewportEnter={() => setAnimate(true)}
+      >
+        <motion.form
+          className={style.form}
+          onSubmit={handleSubmit}
+          animate={
+            animate
+              ? {
+                  y: 0,
+                  opacity: 1,
+                }
+              : {
+                  y: "100vh",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
           <div className={style.inputContainer}>
             <div className={style.inputbox}>
               <input
@@ -127,8 +151,8 @@ export default function Form() {
               </motion.button>
             </div>
           </div>
-        </form>
-      </div>
+        </motion.form>
+      </motion.div>
     </div>
   );
 }

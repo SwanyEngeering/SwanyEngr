@@ -204,7 +204,7 @@ export default function Experties() {
   const child = {
     hidden: {
       opacity: 0,
-      y: "50vw",
+      y: "50vh",
     },
     animate: {
       opacity: 1,

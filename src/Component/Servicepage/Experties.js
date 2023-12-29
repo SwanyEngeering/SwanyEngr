@@ -1,18 +1,73 @@
 import style from "../../style/aboutpage/Experties.module.css";
 
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 export default function Experties() {
+  const parent = {
+    hidden: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: 0.2,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  const child = {
+    hidden: {
+      opacity: 0,
+      x: "100vw",
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "tween",
+        duration: 0.4,
+      },
+    },
+  };
+  const [animate, setAnimate] = useState(false);
+  const [head, setHead] = useState(false);
   return (
-    <div className={`${style.container} ${style.serviceContainer}`}>
+    <motion.div
+      className={`${style.container} ${style.serviceContainer}`}
+      onViewportEnter={() => setHead(true)}
+    >
       <div
         className={`${style.headingContainer} ${style.serviceHeadingContainer}`}
       >
-        <div className={`${style.heading} ${style.serviceHeading}`}>
+        <motion.div
+          className={`${style.heading} ${style.serviceHeading}`}
+          animate={
+            head
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "-100vw",
+                  opacity: 0,
+                }
+          }
+        >
           Our Experties
-        </div>
+        </motion.div>
       </div>
-      <div className={style.boxContainer}>
-        <div className={style.textContainer}>
-          <div className={style.card}>
+      <motion.div
+        className={style.boxContainer}
+        onViewportEnter={() => setAnimate(true)}
+      >
+        <motion.div
+          className={style.textContainer}
+          variants={parent}
+          animate={animate ? "animate" : "hidden"}
+        >
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box3}`}>01.</div>
             <div>
               <div className={style.cardHead}>Quantity & Cost Estimation</div>
@@ -25,8 +80,8 @@ export default function Experties() {
                 Industrial Construction.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box3}`}>02.</div>
             <div>
               <div className={style.cardHead}>Project Management Services</div>
@@ -37,8 +92,8 @@ export default function Experties() {
                 deliver successful outcomes.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box2}`}>03.</div>
             <div>
               <div className={style.cardHead} style={{ color: "whitesmoke" }}>
@@ -52,8 +107,8 @@ export default function Experties() {
                 communication of design intent.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box2}`}>04.</div>
             <div>
               <div className={style.cardHead} style={{ color: "whitesmoke" }}>
@@ -67,8 +122,8 @@ export default function Experties() {
                 the Architectural and Structural 3D Modelling.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box3}`}>05.</div>
             <div>
               <div className={style.cardHead}>
@@ -82,8 +137,8 @@ export default function Experties() {
                 of a project, ensuring a harmonious and captivating aesthetic.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box3}`}>06.</div>
             <div>
               <div className={style.cardHead}>Structure Design & Analysis</div>
@@ -95,8 +150,8 @@ export default function Experties() {
                 engineering detail.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box2}`}>07.</div>
             <div>
               <div className={style.cardHead} style={{ color: "whitesmoke" }}>
@@ -109,8 +164,8 @@ export default function Experties() {
                 emotional connection between design concepts and reality.
               </div>
             </div>
-          </div>
-          <div className={style.card}>
+          </motion.div>
+          <motion.div className={style.card} variants={child}>
             <div className={`${style.box} ${style.box2}`}>08.</div>
             <div>
               <div className={style.cardHead} style={{ color: "whitesmoke" }}>
@@ -123,9 +178,9 @@ export default function Experties() {
                 and professionalism
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

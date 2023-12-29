@@ -79,6 +79,7 @@ export default function Values() {
             type: "tween",
             duration: 1.5,
             ease: "easeInOut",
+            delay: 0.2,
           }}
         >
           <div className={style.heading}>Accountability</div>
@@ -105,6 +106,7 @@ export default function Values() {
             type: "tween",
             duration: 1.5,
             ease: "easeInOut",
+            delay: 0.4,
           }}
         >
           <div className={style.heading}>Teamwork</div>
@@ -131,6 +133,7 @@ export default function Values() {
             type: "tween",
             duration: 1.5,
             ease: "easeInOut",
+            delay: 0.6,
           }}
         >
           <div className={style.heading}>Sustainability</div>

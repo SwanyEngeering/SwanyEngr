@@ -59,3 +59,27 @@
   width: 100%;
   height: 100%;
 }
+.slideMobContainer {
+  display: none !important;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .slideContainer {
+    display: none !important;
+  }
+  .slideMobContainer {
+    display: block !important;
+    margin-top: 3rem;
+  }
+  .pccont {
+    display: none;
+  }
+  .heading {
+    margin-top: 4rem;
+  }
+}
