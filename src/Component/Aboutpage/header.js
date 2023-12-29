@@ -1,50 +1,48 @@
-import style from "../../style/aboutpage/header.module.css";
+import { useState } from "react";
+import style from "../../style/homepage/Header.module.css";
 import { motion } from "framer-motion";
 
-export default function header() {
-  const animateVariants = {
+export default function Header(props) {
+  const [flag, setFlag] = useState(false);
+  const animation = {
     hidden: {
+      x: "-100vw",
       opacity: 0,
-      y: "10rem",
     },
     animate: {
+      x: 0,
       opacity: 1,
-      y: "0rem",
       transition: {
-        type: "spring",
-        stiffness: 140,
-        damping: 11,
-        duration: 0.3,
-        repeat: 0,
+        type: "tween",
+        duration: 1,
       },
     },
   };
   return (
     <>
-      <div className={style.container}>
+      <motion.div
+        className={`${style.container} ${props.bg}`}
+        onViewportEnter={() => setFlag(true)}
+      >
         <motion.div
           className={style.heading}
-          variants={animateVariants}
-          initial={"hidden"}
-          animate={"animate"}
+          variants={animation}
+          animate={flag ? "animate" : "hidden"}
         >
-          About - Swany Engr
+          Introduction Swany
         </motion.div>
         <motion.div
           className={style.linkContainer}
-          variants={animateVariants}
-          initial={"hidden"}
-          animate={"animate"}
+          variants={animation}
+          animate={flag ? "animate" : "hidden"}
         >
-          <a href="/" className={`${style.link} ${style.home}`}>
-            Home
-          </a>
-          <span className={style.link}>||</span>
-          <a href="/about" className={`${style.link} ${style.about}`}>
-            About
-          </a>
+          <div className={style.textContainer}>
+            B U I L D I N G F O R T O M O R R O W C O N S T R U C T I N G T O D
+            A Y ; <br /> Y O U R C O M P L E T E E N G I N E E R I N G S O L U T
+            I O N
+          </div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 }

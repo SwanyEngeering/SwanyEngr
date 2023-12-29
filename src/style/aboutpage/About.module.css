@@ -14,7 +14,7 @@
   font-family: "Nunito Sans", sans-serif;
   padding-bottom: 2rem;
   background-blend-mode: darken;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .boxContainer {

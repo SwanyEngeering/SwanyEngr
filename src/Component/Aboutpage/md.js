@@ -9,6 +9,60 @@ export default function MD() {
   return (
     <div className={style.container}>
       <motion.div
+        className={style.imgContainer}
+        onViewportEnter={() => setImg(true)}
+      >
+        <motion.img
+          src="/verne-ho-0LAJfSNa-xQ.jpg"
+          alt=""
+          className={style.img}
+          animate={
+            img
+              ? {
+                  y: 0,
+                  opacity: 1,
+                }
+              : {
+                  y: "100vh",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className={`${style.name} ${style.md}`}
+          animate={
+            img
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  y: "100vh",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
+          <div
+            style={{
+              fontWeight: "bold",
+            }}
+          >
+            Sawaiz Waqar Chaudhry
+          </div>{" "}
+          Head of Business Development <br /> Swany Engineering Solutions
+        </motion.div>
+      </motion.div>
+      <motion.div
         className={style.boxContainer}
         onViewportEnter={() => setText(true)}
       >
@@ -21,7 +75,7 @@ export default function MD() {
                   opacity: 1,
                 }
               : {
-                  x: "-100vw",
+                  x: "100vw",
                   opacity: 0,
                 }
           }
@@ -34,6 +88,61 @@ export default function MD() {
           <h1 className={`${style.msg} ${style.mdhead}`}>MANAGING DIRECTOR</h1>
         </motion.div>
         <motion.div
+          className={style.mobImgContainer}
+          onViewportEnter={() => setImg(true)}
+        >
+          <motion.img
+            src="/patrick-tomasso-gMes5dNykus-unsplash.jpg"
+            alt=""
+            className={style.img}
+            animate={
+              img
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "-100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 1,
+            }}
+          />
+          <motion.div
+            className={style.name}
+            animate={
+              img
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "-100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 1,
+              ease: "easeInOut",
+            }}
+          >
+            <div
+              style={{
+                fontWeight: "bold",
+              }}
+            >
+              Sawaiz Waqar Chaudhry
+            </div>
+            <span>
+              Head of Business Development <br /> Swany Engineering Solutions
+            </span>
+          </motion.div>
+        </motion.div>
+        <motion.div
           className={style.textContainer}
           animate={
             text
@@ -42,7 +151,7 @@ export default function MD() {
                   opacity: 1,
                 }
               : {
-                  x: "-100vw",
+                  x: "100vw",
                   opacity: 0,
                 }
           }
@@ -68,60 +177,6 @@ export default function MD() {
             tangible results. Together, we are shaping a future where Swany is
             synonymous with transformative engineering solutions.
           </p>
-        </motion.div>
-      </motion.div>
-      <motion.div
-        className={style.imgContainer}
-        onViewportEnter={() => setImg(true)}
-      >
-        <motion.img
-          src="/verne-ho-0LAJfSNa-xQ.jpg"
-          alt=""
-          className={style.img}
-          animate={
-            img
-              ? {
-                  x: 0,
-                  opacity: 1,
-                }
-              : {
-                  x: "100vw",
-                  opacity: 0,
-                }
-          }
-          transition={{
-            type: "tween",
-            duration: 1,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className={`${style.name} ${style.md}`}
-          animate={
-            img
-              ? {
-                  x: 0,
-                  opacity: 1,
-                }
-              : {
-                  x: "100vw",
-                  opacity: 0,
-                }
-          }
-          transition={{
-            type: "tween",
-            duration: 1,
-            ease: "easeInOut",
-          }}
-        >
-          <div
-            style={{
-              fontWeight: "bold",
-            }}
-          >
-            Sawaiz Waqar Chaudhry
-          </div>{" "}
-          Head of Business Development <br /> Swany Engineering Solutions
         </motion.div>
       </motion.div>
     </div>
