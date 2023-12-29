@@ -34,17 +34,16 @@
 .imageContainer {
   width: 32rem;
   height: 20rem;
-  background: rgba(0, 0, 0, 0.3) url("../../../public/services.jpg");
+  background: url("../../../public/services.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
 }
 
 .contact {
   background-image: url("../../../public/contact.jpg");
-  background-blend-mode: normal;
+  background-blend-mode: lighten;
 }
 
 .choose {

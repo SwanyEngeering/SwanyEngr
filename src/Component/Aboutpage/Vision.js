@@ -1,18 +1,107 @@
 import style from "../../style/aboutpage/Vision.module.css";
 
+import { motion } from "framer-motion";
+import { useState } from "react";
+
 export default function Vision() {
+  const [img, setImg] = useState(false);
+  const [head, setHead] = useState(false);
+  const [text, setText] = useState(false);
   return (
-    <div className={style.container}>
-      <img
+    <motion.div
+      className={style.container}
+      onViewportEnter={() => setImg(true)}
+    >
+      <motion.img
         src="/shea-rouda-Vtl6cOhO87Y.jpg"
         alt="nothing"
         className={style.img}
+        animate={
+          img
+            ? {
+                x: 0,
+                opacity: 1,
+              }
+            : {
+                x: "-100vw",
+                opacity: 1,
+              }
+        }
+        transition={{
+          type: "tween",
+          duration: 1,
+          ease: "easeInOut",
+        }}
       />
-      <div className={style.visionContainer}>
-        <h1 className={style.heading}>Vision & Mission</h1>
-        <div className={style.textContainer}>
-          <div className={style.textHead}>01. Our Vision</div>
-          <p className={style.para}>
+      <motion.div
+        className={style.visionContainer}
+        onViewportEnter={() => setHead(true)}
+      >
+        <motion.h1
+          className={style.heading}
+          animate={
+            head
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "100vw",
+                  opacity: 1,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
+          Vision & Mission
+        </motion.h1>
+        <motion.div
+          className={style.textContainer}
+          onViewportEnter={() => setText(true)}
+        >
+          <motion.div
+            className={style.textHead}
+            animate={
+              text
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 0.7,
+              ease: "easeInOut",
+            }}
+          >
+            01. Our Vision
+          </motion.div>
+          <motion.p
+            className={style.para}
+            animate={
+              text
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 0.9,
+              ease: "easeInOut",
+            }}
+          >
             Our vision is to be the unrivaled leader in engineering solutions,
             inspiring innovation, and setting a new paradigm where Swany is
             synonymous with excellence. We aim to reshape the landscape of the
@@ -23,11 +112,47 @@ export default function Vision() {
             navigate the future, we remain steadfast in our mission to leave an
             indelible mark on the industry, elevating Swany to unparalleled
             heights of success and distinction.
-          </p>
-          <div className={`${style.textHead} ${style.mission}`}>
+          </motion.p>
+          <motion.div
+            className={`${style.textHead} ${style.mission}`}
+            animate={
+              text
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 1.1,
+              ease: "easeInOut",
+            }}
+          >
             02. Our Mission
-          </div>
-          <p className={style.para}>
+          </motion.div>
+          <motion.p
+            className={style.para}
+            animate={
+              text
+                ? {
+                    y: 0,
+                    opacity: 1,
+                  }
+                : {
+                    y: "100vh",
+                    opacity: 0,
+                  }
+            }
+            transition={{
+              type: "tween",
+              duration: 1.3,
+              ease: "easeInOut",
+            }}
+          >
             With an unwavering commitment to cutting-edge technology and
             sustainable practices, we strive to surpass industry standards and
             redefine the possibilities within our field. At Swany, our mission
@@ -43,9 +168,9 @@ export default function Vision() {
             stakeholders. At Swany, we don't just build structures; we construct
             legacies that endure and contribute to a brighter, more sustainable
             future.
-          </p>
-        </div>
-      </div>
-    </div>
+          </motion.p>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

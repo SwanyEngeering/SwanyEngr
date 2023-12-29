@@ -36,12 +36,11 @@
   margin-top: 1rem;
   width: 32rem;
   height: 19rem;
-  background: rgba(0, 0, 0, 0.3) url("../../../public/about.png");
+  background: url("../../../public/about.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
 }
 
 .meeting {

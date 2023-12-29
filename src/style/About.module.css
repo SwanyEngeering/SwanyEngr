@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.boxContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+}
+
+.textHead {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.para {
+  margin-top: 1.5rem;
+  text-align: justify;
+}

@@ -1,11 +1,60 @@
 import style from "../../style/aboutpage/About.module.css";
 
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 export default function About() {
+  const [head, setHead] = useState(false);
+  const [text, setText] = useState(false);
   return (
-    <div className={style.container}>
-      <h1 className={style.heading}>What Do You Know About Us?</h1>
-      <div className={style.boxContainer}>
-        <div className={style.textContainer}>
+    <motion.div
+      className={style.container}
+      onViewportEnter={() => setHead(true)}
+    >
+      <motion.h1
+        className={style.heading}
+        animate={
+          head
+            ? {
+                y: 0,
+                opacity: 1,
+              }
+            : {
+                y: "100vh",
+                opacity: 0,
+              }
+        }
+        transition={{
+          type: "tween",
+          duration: 1,
+          ease: "easeInOut",
+        }}
+      >
+        What Do You Know About Us?
+      </motion.h1>
+      <motion.div
+        className={style.boxContainer}
+        onViewportEnter={() => setText(true)}
+      >
+        <motion.div
+          className={style.textContainer}
+          animate={
+            text
+              ? {
+                  y: 0,
+                  opacity: 1,
+                }
+              : {
+                  y: "100vh",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
           <h1 className={style.textHead}>
             Welcome to Swany - Shaping Tomorrow, Engineering Today
           </h1>
@@ -28,8 +77,8 @@ export default function About() {
             shaping tomorrow—choose Swany as your trusted partner for
             transformative and unparalleled engineering solutions.
           </p>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

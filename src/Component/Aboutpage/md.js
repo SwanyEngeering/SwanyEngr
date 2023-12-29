@@ -1,13 +1,56 @@
 import style from "../../style/aboutpage/ceo.module.css";
+import { motion } from "framer-motion";
 
-export default function ceo() {
+import { useState } from "react";
+
+export default function MD() {
+  const [img, setImg] = useState(false);
+  const [text, setText] = useState(false);
   return (
     <div className={style.container}>
-      <div className={style.boxContainer}>
-        <div className={style.heading}>
-          <h1 className={style.msg}>MANAGING DIRECTOR</h1>
-        </div>
-        <div className={style.textContainer}>
+      <motion.div
+        className={style.boxContainer}
+        onViewportEnter={() => setText(true)}
+      >
+        <motion.div
+          className={style.heading}
+          animate={
+            text
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "-100vw",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
+          <h1 className={`${style.msg} ${style.mdhead}`}>MANAGING DIRECTOR</h1>
+        </motion.div>
+        <motion.div
+          className={style.textContainer}
+          animate={
+            text
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "-100vw",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+          }}
+        >
           <p className={style.para}>
             I extend a warm welcome to all our valued clients, collaborators,
             and partners. As the Managing Director of Swany, I am privileged to
@@ -25,11 +68,52 @@ export default function ceo() {
             every project is a canvas for engineering brilliance, and success is
             a shared masterpiece."
           </div>
-        </div>
-      </div>
-      <div className={style.imgContainer}>
-        <img src="/verne-ho-0LAJfSNa-xQ.jpg" alt="" className={style.img} />
-        <div className={`${style.name} ${style.md}`}>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className={style.imgContainer}
+        onViewportEnter={() => setImg(true)}
+      >
+        <motion.img
+          src="/verne-ho-0LAJfSNa-xQ.jpg"
+          alt=""
+          className={style.img}
+          animate={
+            img
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "100vw",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className={`${style.name} ${style.md}`}
+          animate={
+            img
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "100vw",
+                  opacity: 0,
+                }
+          }
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+        >
           <div
             style={{
               fontWeight: "bold",
@@ -38,8 +122,8 @@ export default function ceo() {
             Sawaiz Waqar Chaudhry
           </div>{" "}
           Head of Business Development <br /> Swany Engineering Solutions
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
