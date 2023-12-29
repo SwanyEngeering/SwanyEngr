@@ -223,22 +223,24 @@ export default function Experties() {
       className={style.container}
       onViewportEnter={() => setHead(true)}
     >
-      <motion.div
-        className={style.headingContainer}
-        animate={
-          head
-            ? {
-                x: 0,
-                opacity: 1,
-              }
-            : {
-                x: "100vw",
-                opacity: 0,
-              }
-        }
-      >
-        <div className={style.heading}>Our Experties</div>
-      </motion.div>
+      <div className={style.headingContainer}>
+        <motion.div
+          className={style.heading}
+          animate={
+            head
+              ? {
+                  x: 0,
+                  opacity: 1,
+                }
+              : {
+                  x: "100vw",
+                  opacity: 0,
+                }
+          }
+        >
+          Our Experties
+        </motion.div>
+      </div>
       <motion.div
         className={style.boxContainer}
         onViewportEnter={() => setAnimate(true)}

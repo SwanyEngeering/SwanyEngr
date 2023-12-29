@@ -51,6 +51,11 @@ export default function MD() {
             duration: 1,
           }}
         >
+          <div className={style.textHead}>
+            "Unleashing Innovation, One Blueprint at a Time: <br /> Join Swany,
+            where every project is a canvas for engineering brilliance, and
+            success is a shared masterpiece."
+          </div>
           <p className={style.para}>
             I extend a warm welcome to all our valued clients, collaborators,
             and partners. As the Managing Director of Swany, I am privileged to
@@ -63,11 +68,6 @@ export default function MD() {
             tangible results. Together, we are shaping a future where Swany is
             synonymous with transformative engineering solutions.
           </p>
-          <div className={style.textHead}>
-            "Unleashing Innovation, One Blueprint at a Time: Join Swany, where
-            every project is a canvas for engineering brilliance, and success is
-            a shared masterpiece."
-          </div>
         </motion.div>
       </motion.div>
       <motion.div

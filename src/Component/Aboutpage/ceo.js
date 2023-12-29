@@ -108,9 +108,9 @@ export default function CEO() {
           }}
         >
           <div className={style.textHead}>
-            "Revolutionizing Engineering with Passion and Precision: Energize
-            your projects, elevate your visions – welcome to the dynamic world
-            of Swany!"
+            "Revolutionizing Engineering with Passion and Precision: <br />{" "}
+            Energize your projects, elevate your visions – welcome to the
+            dynamic world of Swany!"
           </div>
           <p className={style.para}>
             At Swany, we believe in the transformative power of engineering to

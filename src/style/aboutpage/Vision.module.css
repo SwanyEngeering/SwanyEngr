@@ -6,6 +6,7 @@
   margin-top: 4rem;
   gap: 3rem;
   margin-bottom: 2rem;
+  overflow-x: hidden;
 }
 
 .img {
