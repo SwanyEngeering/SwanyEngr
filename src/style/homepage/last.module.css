@@ -1,0 +1,40 @@
+.container {
+  width: 100vw;
+  height: 8rem;
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  margin-left: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  width: 15rem;
+  height: 7rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.textContainer {
+  margin-left: 1rem;
+  padding-top: 0.4rem;
+  color: #10bfff;
+}
+
+.top {
+  font-weight: bold;
+}
+
+.leftBox {
+  padding-top: 2rem;
+  width: 20rem;
+  height: 7rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  color: #10bfff;
+}

@@ -1,5 +1,6 @@
 import style from "../style/Navbar.module.css";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Navbar2() {
   const parentNav = {
@@ -29,8 +30,40 @@ export default function Navbar2() {
       },
     },
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
   return (
     <div>
+      <div className={style.container}>
+        <div className={style.logoContainer}>
+          <div className={style.topLogo}>SW</div>
+          <div className={style.intro}>
+            <div className={style.top}>Swany</div>
+            <div className={style.bottom}>Engineering Solutions</div>
+          </div>
+          <div className={style.intro}>
+            <div className={style.top}>
+              Building For Tomorrow Constructing Today
+            </div>
+            <div className={style.bottom2}>
+              Your Complete Engineering Solution
+            </div>
+          </div>
+          <div className={style.contact}>
+            <a href="https://wa.me/+923334463813">
+              <img src="/whatsapp.png" alt="" className={style.whatsapp} />
+            </a>
+          </div>
+        </div>
+      </div>
       <motion.ul
         className="nav nav-tabs justify-content-center"
         variants={parentNav}
@@ -54,10 +87,12 @@ export default function Navbar2() {
             Home
           </a>
         </motion.li>
-        <motion.li className="nav-item" variants={childNav}>
-          <a className="nav-link " aria-current="page" href="/about">
-            About
-          </a>
+        <motion.li
+          className="nav-link"
+          variants={childNav}
+          onMouseEnter={handleMouseEnter}
+        >
+          About
         </motion.li>
         <motion.li className="nav-item" variants={childNav}>
           <a className="nav-link" href="/service">
@@ -163,6 +198,50 @@ export default function Navbar2() {
           </div>
         </div>
       </div>
+      {isOpen && (
+        <div className={style.dropdownContent} onMouseLeave={handleMouseLeave}>
+          <div className={style.imgContainer}>
+            {/* <img
+              src="/andrade-YI_9SivVt_s-unsplash.jpg"
+              alt=""
+              className={style.img}
+            /> */}
+            <div className={style.imgText}>
+              <div className={style.imgHead}>About Swany</div>
+              <div className={style.imgContent}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+                maxime aliquid vitae reprehenderit consequatur quae provident
+                corrupti debitis eius officiis reiciendis odit quos vero magnam
+                fugit repellat, dicta nulla ad.
+              </div>
+            </div>
+          </div>
+          <div className={style.textContainer}>
+            <div className={style.firstColumn}>
+              <a href="/about/profile" className={style.dropLink}>
+                <div className={style.text}>Company Profile</div>
+              </a>
+              <a href="/about/leadership" className={style.dropLink}>
+                <div className={style.text}>Our Leadearship</div>
+              </a>
+              <a href="/about/mission" className={style.dropLink}>
+                <div className={style.text}>Our Mission</div>
+              </a>
+            </div>
+            <div className={style.firstColumn}>
+              <a href="/about/vision" className={style.dropLink}>
+                <div className={style.text}>Our Vision</div>
+              </a>
+              <a href="/about/value" className={style.dropLink}>
+                <div className={style.text}>Company Goals</div>
+              </a>
+              <a href="/about/about" className={style.dropLink}>
+                <div className={style.text}>How it Works</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

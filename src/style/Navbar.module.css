@@ -1,11 +1,126 @@
+.container {
+  width: 100vw;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.logoContainer {
+  width: 35rem;
+  height: 100%;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.topLogo {
+  height: 100%;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.top {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.bottom {
+  font-size: smaller;
+  width: 10rem;
+}
+
+.bottom2 {
+  font-size: smaller;
+}
+
+.whatsapp {
+  position: absolute;
+  right: 2rem;
+  width: 2rem;
+  margin-top: 0.1rem;
+}
+
 .logo {
   color: white;
   font-weight: bold;
   font-family: "Nunito Sans", sans-serif;
   left: 1.5rem;
-  top: 1.3rem;
   font-size: 1rem;
   position: absolute;
+}
+
+.dropdownContent {
+  width: 100vw;
+  height: 10rem;
+  display: flex;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 1);
+  /* position: absolute; */
+}
+
+.imgContainer {
+  height: 100%;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../public/andrade-YI_9SivVt_s-unsplash.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .img {
+  width: 100%;
+  height: 100%;
+} */
+
+.textContainer {
+  width: 59%;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.dropLink {
+  text-decoration: none;
+}
+
+.imgText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgHead {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+.imgContent {
+  color: whitesmoke;
+  width: 95%;
+  text-align: justify;
+  margin-top: 0.2rem;
+}
+
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.text {
+  color: whitesmoke;
+  margin-left: 4rem;
+  text-decoration: none;
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
 }
 
 /* drawer code */
@@ -27,6 +142,7 @@
   margin-top: 0.7rem;
   margin-right: 1rem;
   border: 2px solid;
+  cursor: pointer !important;
 }
 
 .link {

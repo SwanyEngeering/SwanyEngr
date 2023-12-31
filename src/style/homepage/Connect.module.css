@@ -1,0 +1,87 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../../public/home/hunters-race-MYbhN8KaaEc.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 4rem;
+}
+
+.mainContainer {
+  width: 90vw;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  color: whitesmoke;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background-color: whitesmoke;
+  height: 17rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.7);
+}
+
+.cardHead {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.text {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5rem;
+  font-size: small;
+}
+
+.linkContainer {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: #e9a901;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+}
+
+.link:hover {
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 5px;
+}

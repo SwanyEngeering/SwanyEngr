@@ -1,0 +1,75 @@
+.videowidth {
+  width: 85vw;
+  margin: auto;
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+.videoTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  gap: 0.2rem;
+}
+.play {
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoHead {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+}
+
+.pausebutton {
+  width: 36px;
+}
+
+.playbutton {
+  display: none;
+  width: 36px;
+}
+
+@media screen and (min-width: 660px) and (max-width: 1100px) {
+  .videowidth {
+    width: 90%;
+  }
+  .videoHead {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .videowidth {
+    width: 90%;
+  }
+  .play {
+    width: 3rem;
+    height: 3rem;
+  }
+  .pausebutton {
+    width: 22px;
+  }
+  .playbutton {
+    width: 22px;
+  }
+  .videoHead {
+    font-size: 23px;
+  }
+}

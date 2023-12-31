@@ -31,19 +31,21 @@ body {
 
 .nav {
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   align-items: center;
   border: none;
-  position: fixed;
+  width: 100vw;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 999; */
 }
 
 .nav-link {
   color: whitesmoke;
+  cursor: pointer !important;
 }
 
 .drawer {

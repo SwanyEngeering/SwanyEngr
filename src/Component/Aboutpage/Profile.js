@@ -7,6 +7,20 @@ import { useState } from "react";
 export default function CEO() {
   const [img, setImg] = useState(false);
   const [text, setText] = useState(false);
+  // let x = 1;
+  //   const videoControl = () => {
+  //     const video = document.querySelector(".video");
+  //     if (x % 2 === 1) {
+  //       video.play();
+  //       document.querySelector(".play").style.display = "none";
+  //       document.querySelector(".pause").style.display = "block";
+  //     } else {
+  //       video.pause();
+  //       document.querySelector(".play").style.display = "block";
+  //       document.querySelector(".pause").style.display = "none";
+  //     }
+  //     x++;
+  //   };
   return (
     <div className={`${style.container} ${mobstyle.container}`}>
       <motion.div
@@ -79,6 +93,28 @@ export default function CEO() {
         className={`${style.videoContainer} ${style.video}`}
         onViewportEnter={() => setImg(true)}
       >
+        {/* <motion.div className={style.img}>
+          <motion.video src="/realestate.mp4" loop className={`video`} />
+          <div className={Styles.videoTextContainer}>
+            <div
+              className={Styles.play}
+              onClick={() => {
+                videoControl();
+              }}
+            >
+              <img
+                src="/button.png"
+                alt="About1"
+                className={`${Styles.pausebutton} play`}
+              />
+              <img
+                src="/pause.png"
+                alt="About1"
+                className={`${Styles.playbutton} pause`}
+              />
+            </div>
+          </div>
+        </motion.div> */}
         <motion.img
           src="/patrick-tomasso-gMes5dNykus-unsplash.jpg"
           alt=""

@@ -11,6 +11,7 @@ export default function Vision() {
     <motion.div
       className={style.container}
       onViewportEnter={() => setImg(true)}
+      id="vision"
     >
       <motion.img
         src="/shea-rouda-Vtl6cOhO87Y.jpg"
