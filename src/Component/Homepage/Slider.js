@@ -69,7 +69,11 @@ export default function App() {
               Learn More
             </motion.button>
           </motion.div>
-          <img src="/foi_image-homepage-2.jpg" alt="" className={style.imag} />
+          <img
+            src="/andrade-YI_9SivVt_s-unsplash.jpg"
+            alt=""
+            className={style.imag}
+          />
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -88,7 +92,7 @@ export default function App() {
               Learn More
             </motion.button>
           </motion.div>
-          <img src="/HRC-Header2.png" alt="" className={style.imag} />
+          <img src="/fomstock.jpg" alt="" className={style.imag} />
         </SwiperSlide>
         <SwiperSlide>
           <motion.div
@@ -108,7 +112,7 @@ export default function App() {
             </motion.button>
           </motion.div>
           <img
-            src="/sustainable-legacies-banner-home.jpg"
+            src="/copernico-p_kICQCOM4s-unsplash.jpg"
             alt=""
             className={style.imag}
           />
@@ -130,11 +134,7 @@ export default function App() {
               Learn More
             </motion.button>
           </motion.div>
-          <img
-            src="/thumbnail_header1-1980x500px-header-teal.jpg"
-            alt=""
-            className={style.imag}
-          />
+          <img src="/choose.jpg" alt="" className={style.imag} />
         </SwiperSlide>
       </Swiper>
     </>

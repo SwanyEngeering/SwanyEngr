@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: rgba(0, 0, 0, 0.7)
     url("../../../public/home/hunters-race-MYbhN8KaaEc.jpg");
   background-blend-mode: darken;
@@ -12,6 +12,7 @@
 
 .mainContainer {
   width: 90vw;
+  padding-top: 2rem;
   height: 100%;
   margin: auto;
   padding-bottom: 2rem;
@@ -75,10 +76,6 @@
   align-items: center;
   justify-content: center;
   width: 7rem;
-}
-
-.link:hover {
-  font-weight: 500;
 }
 
 .arrow {

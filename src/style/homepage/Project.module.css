@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  height: auto;
+  width: 90vw;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.cardContainer {
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.card {
+  height: 100%;
+  width: 30%;
+  background-color: brown;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardBackText {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+
+.cardHead {
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.loc {
+  margin-top: 0.3rem;
+  font-weight: bold;
+}
+
+.scope {
+  margin-top: 0.4rem;
+}
+
+.link {
+  position: absolute;
+  bottom: 1rem;
+  color: red;
+}

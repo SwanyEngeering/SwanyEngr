@@ -1,0 +1,95 @@
+.container {
+  width: 100vw;
+  height: 70vh;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.headContainer {
+  width: 95%;
+  margin: auto;
+}
+
+.head {
+  font-size: 3rem;
+}
+
+.mainContainer {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.textContainer {
+  width: 30%;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.text {
+  margin-left: 0.1rem;
+  text-align: justify;
+}
+.expertiContainer {
+  width: 69%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  width: 32%;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../../public/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  display: flex;
+  transition: all 0.5s ease;
+  flex-direction: column;
+}
+
+.cardHead {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.cardText {
+  color: whitesmoke;
+  padding-top: 0.5rem;
+  text-align: justify;
+  font-size: smaller;
+  width: 90%;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+}
+.btn {
+  text-align: center;
+  background-color: darkblue;
+  transition: all 0.5s ease;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.card:hover .cardText {
+  height: 2rem;
+  overflow: hidden;
+}
+
+.card:hover .btn {
+  height: 5rem;
+}
