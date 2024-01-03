@@ -92,7 +92,13 @@ export default function Navbar2() {
           variants={childNav}
           onMouseEnter={handleMouseEnter}
         >
-          About
+          <a
+            aria-current="page"
+            href="/about"
+            style={{ textDecoration: "none", color: "whitesmoke" }}
+          >
+            About
+          </a>
         </motion.li>
         <motion.li className="nav-item" variants={childNav}>
           <a className="nav-link" href="/service">
@@ -209,10 +215,24 @@ export default function Navbar2() {
             <div className={style.imgText}>
               <div className={style.imgHead}>About Swany</div>
               <div className={style.imgContent}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
-                maxime aliquid vitae reprehenderit consequatur quae provident
-                corrupti debitis eius officiis reiciendis odit quos vero magnam
-                fugit repellat, dicta nulla ad.
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    marginTop: "0.5rem",
+                  }}
+                >
+                  We shape your vision through Design
+                </div>
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    marginTop: "0.5rem",
+                  }}
+                >
+                  Bringing idea to life
+                </div>
               </div>
             </div>
           </div>

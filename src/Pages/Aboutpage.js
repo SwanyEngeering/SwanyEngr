@@ -14,6 +14,10 @@ import profileStyle from "../style/aboutpage/ceo.module.css";
 import mobstyle from "../style/aboutpage/Profile.module.css";
 import teamStyle from "../style/aboutpage/Team.module.css";
 import aboutStyle from "../style/aboutpage/About.module.css";
+import Team from "../Component/Aboutpage/Team";
+import Value from "../Component/Aboutpage/values";
+import Team2 from "../Component/Aboutpage/Team2";
+import About from "../Component/Aboutpage/About";
 
 export default function Aboutpage() {
   const { section } = useParams();
@@ -366,7 +370,7 @@ export default function Aboutpage() {
       <MD />
 
       {/* Team Code */}
-      <div className={teamStyle.container} id="team">
+      {/* <div className={teamStyle.container} id="team">
         <div className={teamStyle.boxContainer}>
           <h1 className={teamStyle.heading}>Meet Our Team</h1>
           <div className={teamStyle.textContainer}>
@@ -420,10 +424,11 @@ export default function Aboutpage() {
             </div>
           </div>
         </div>
-      </div>
-      <Experties id="experties" />
+      </div> */}
+      <Team />
+      {/* <Experties id="experties" /> */}
       {/* Value Code */}
-      <motion.div
+      {/* <motion.div
         className={valueStyle.container}
         onViewportEnter={() => setHead(true)}
         id="value"
@@ -561,10 +566,11 @@ export default function Aboutpage() {
             </p>
           </motion.div>
         </motion.div>
-      </motion.div>
-
+      </motion.div> */}
+      <Team2 />
+      <Value />
       {/* About Code */}
-      <motion.div
+      {/* <motion.div
         className={aboutStyle.container}
         onViewportEnter={() => setAboutHead(true)}
         id="about"
@@ -676,8 +682,8 @@ export default function Aboutpage() {
             </motion.p>
           </div>
         </motion.div>
-      </motion.div>
-
+      </motion.div> */}
+      <About />
       <Vision id="vision" />
     </div>
   );
