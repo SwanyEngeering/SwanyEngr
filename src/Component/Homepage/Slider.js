@@ -13,7 +13,7 @@ export default function App() {
   const animateVariants = {
     hidden: {
       opacity: 0,
-      y: "10rem",
+      y: "20rem",
     },
     animate: {
       opacity: 1,

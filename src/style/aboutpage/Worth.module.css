@@ -1,0 +1,136 @@
+.container {
+  width: 100vw;
+  height: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../../public/home/hunters-race-MYbhN8KaaEc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.mainContainer {
+  padding-top: 1rem;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imgContainer {
+  width: 40%;
+  height: 25rem;
+  background-color: crimson;
+}
+
+.textContainer {
+  width: 59%;
+  height: 29rem;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(233, 169, 1);
+  height: 5rem;
+}
+
+.heading {
+  font-size: 2.3rem;
+  color: black;
+  font-weight: bold;
+  padding-top: 0.6rem;
+  height: 5rem;
+}
+
+.cardContainer {
+  width: 100%;
+  height: 7rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  width: 49%;
+  height: 100%;
+}
+
+.footContainer {
+  width: 100%;
+  height: 7rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.footCard {
+  width: 100%;
+  height: 3.3rem;
+}
+
+.cardHead {
+  color: rgb(233, 169, 1);
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 15rem;
+}
+
+.cardText {
+  color: whitesmoke;
+  width: 15rem;
+  margin-top: 0.5rem;
+}
+
+.cardTextSmall {
+  color: whitesmoke;
+  width: 15rem;
+  font-size: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.textCard {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.footimg {
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: rgb(233, 169, 1);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.footHead {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 0.55rem;
+  width: 32rem;
+  color: rgb(233, 169, 1);
+  font-weight: bold;
+}
+
+.lastHead {
+  width: 70%;
+  margin: auto;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}

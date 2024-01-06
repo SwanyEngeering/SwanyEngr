@@ -104,6 +104,11 @@ body {
   transform: rotateY(180deg);
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #e9a901 !important;
+}
+
 @media screen and (max-width: 600px) {
   .nav {
     display: none;
