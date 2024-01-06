@@ -216,6 +216,9 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import style from "../../style/homepage/Project.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const Projects = () => {
   const projectData = [
@@ -285,37 +288,75 @@ const Projects = () => {
         Our Professionals Leave a Lasting Impression
       </div>
       <div className={style.cardContainer} ref={cardsContainerRef}>
-        {projectData.map((project) => (
-          <div
-            key={project.id}
-            className={`card ${
-              flippedCards.includes(project.id) ? "flipped" : ""
-            }`}
-            onClick={() => handleCardClick(project.id)}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <img
-                  src={project.image}
-                  alt={`Card Front - ${project.name}`}
-                  className={style.img}
-                />
-              </div>
-              <div className="card-back">
-                <div className={style.cardBackText}>
-                  <div className={style.cardHead}>
-                    Project Name: {project.name}
+        <Swiper
+          breakpoints={{
+            600: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            601: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1101: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          grabCursor={true}
+          loop={true}
+          modules={[Autoplay]}
+          className={`mySwiper`}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          rewind={true}
+        >
+          {projectData.map((project) => {
+            return (
+              <SwiperSlide key={project._id}>
+                <div
+                  key={project.id}
+                  className={`card ${
+                    flippedCards.includes(project.id) ? "flipped" : ""
+                  }`}
+                  onClick={() => handleCardClick(project.id)}
+                >
+                  <div className="card-inner">
+                    <div className="card-front">
+                      <img
+                        src={project.image}
+                        alt={`Card Front - ${project.name}`}
+                        className={style.img}
+                      />
+                    </div>
+                    <div className="card-back">
+                      <div className={style.cardBackText}>
+                        <div className={style.cardHead}>
+                          Project Name: {project.name}
+                        </div>
+                        <div className={style.loc}>
+                          Location: {project.location}
+                        </div>
+                        <div className={style.scope}>
+                          Scope: {project.scope}
+                        </div>
+                        <a href="#" className={style.link}>
+                          Read More
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div className={style.loc}>Location: {project.location}</div>
-                  <div className={style.scope}>Scope: {project.scope}</div>
-                  <a href="#" className={style.link}>
-                    Read More
-                  </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        ))}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
   );
