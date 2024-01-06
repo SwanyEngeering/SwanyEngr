@@ -1,0 +1,62 @@
+.container {
+  height: auto;
+  width: 100vw;
+  margin-top: 6rem;
+}
+
+.mainContainer {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  gap: 1%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.headContainer {
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cardContainer {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  margin-top: 1rem;
+  width: 49%;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.7)
+    url("../../../public/copernico-p_kICQCOM4s-unsplash.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardHead {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.text {
+  color: whitesmoke;
+  width: 95%;
+  margin: auto;
+  text-align: justify;
+  margin-top: 0.6rem;
+}

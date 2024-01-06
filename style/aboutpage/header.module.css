@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/foi_image-homepage-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: whitesmoke;
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.linkContainer {
+  margin-top: 0.7rem;
+}
+
+.home {
+  padding-right: 0.5rem;
+}
+
+.about {
+  padding-left: 0.5rem;
+}
+
+.link:hover {
+  color: blue;
+}

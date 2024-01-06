@@ -1,0 +1,66 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  width: 70vw;
+  color: #e9a901;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 4rem;
+}
+
+.linkContainer {
+  width: 70vw;
+  color: black;
+  background-color: #e9a901;
+  font-size: 1rem;
+}
+
+.textContainer {
+  width: 66%;
+  margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .heading {
+    width: 100vw;
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  .linkContainer {
+    width: 100vw;
+    font-size: 0.69rem;
+  }
+  .textContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1000px) {
+  .linkContainer {
+    width: 90vw;
+  }
+  .heading {
+    width: 90vw;
+  }
+  .textContainer {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .textContainer {
+    width: 81%;
+  }
+}

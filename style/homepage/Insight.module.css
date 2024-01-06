@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 4rem;
+}
+
+.headerContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.linkButton {
+  text-decoration: none;
+  color: black;
+  height: 48px;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 2rem;
+  border: none;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+.box {
+  width: 95%;
+  margin: auto;
+  height: 80%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card1 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardimg {
+  width: 100%;
+  height: 13rem;
+  border-radius: 2rem;
+}
+
+.cardHead {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.cardText {
+  margin-top: 0.5rem;
+  font-size: small;
+  text-align: justify;
+  height: 11rem;
+}
+
+.link {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+}
+
+.link:hover {
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 5px;
+}

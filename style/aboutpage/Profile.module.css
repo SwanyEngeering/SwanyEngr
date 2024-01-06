@@ -1,0 +1,23 @@
+.heading {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .heading {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 6rem;
+    text-align: center;
+    display: flex;
+  }
+  .head {
+    display: none !important;
+  }
+  .video {
+    margin-top: 1rem;
+  }
+}

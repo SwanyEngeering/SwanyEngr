@@ -1,0 +1,34 @@
+.container {
+  width: 70vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.heading {
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.msg {
+  width: 99rem;
+}
+
+.chooseMsg {
+  width: 34rem;
+}
+
+.line {
+  width: 100%;
+  background-color: #0059a6;
+  color: black;
+  height: 0.2rem;
+  border: none;
+}
