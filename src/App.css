@@ -31,16 +31,14 @@ body {
 
 .nav {
   height: 5rem;
-  background-color: rgba(0, 0, 0, 1);
   display: flex;
   align-items: center;
   border: none;
   width: 100vw;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999; */
+  position: absolute;
+  top: 2.4rem;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-link {

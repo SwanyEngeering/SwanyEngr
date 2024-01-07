@@ -7,17 +7,10 @@ import { useState } from "react";
 import ceoStyle from "../style/aboutpage/ceo.module.css";
 
 import { motion } from "framer-motion";
-
-import profileStyle from "../style/aboutpage/ceo.module.css";
-import mobstyle from "../style/aboutpage/Profile.module.css";
-import Team from "../Component/Aboutpage/Team";
 import Value from "../Component/Aboutpage/values";
 import Team2 from "../Component/Aboutpage/Team2";
 import About from "../Component/Aboutpage/About";
-import Stand from "../Component/Aboutpage/Stand";
-import Mission from "../Component/Aboutpage/Mission";
-import Believe from "../Component/Aboutpage/Believe";
-import Worth from "../Component/Aboutpage/Worth";
+import Profile from "../Component/Aboutpage/Profile";
 
 export default function Aboutpage() {
   const { section } = useParams();
@@ -36,154 +29,11 @@ export default function Aboutpage() {
   }, [section]);
   const [img, setImg] = useState(false);
   const [ceoText, setCeoText] = useState(false);
-  const [profimg, setProfImg] = useState(false);
-  const [proftext, setProfText] = useState(false);
   return (
     <div>
       <Header bg={"about"} head={"about"} />
-      {/* Profile Code */}
-      <div
-        className={`${profileStyle.container} ${mobstyle.container}`}
-        id="profile"
-      >
-        <motion.div
-          className={profileStyle.boxContainer}
-          onViewportEnter={() => setProfText(true)}
-        >
-          <motion.div
-            className={`${profileStyle.heading} ${mobstyle.head}`}
-            animate={
-              proftext
-                ? {
-                    x: 0,
-                    opacity: 1,
-                  }
-                : {
-                    x: "-100vw",
-                    opacity: 0,
-                  }
-            }
-            transition={{
-              type: "tween",
-              duration: 1,
-              ease: "easeInOut",
-            }}
-          >
-            <h1 className={profileStyle.msg}>Company Profile</h1>
-          </motion.div>
-          <div className={profileStyle.textContainer}>
-            <motion.p
-              className={profileStyle.para}
-              animate={
-                proftext
-                  ? {
-                      x: 0,
-                      opacity: 1,
-                    }
-                  : {
-                      x: "-100vw",
-                      opacity: 0,
-                    }
-              }
-              transition={{
-                type: "tween",
-                duration: 1,
-                ease: "easeInOut",
-              }}
-            >
-              Welcome to Swany Engineering Works, your trusted partner in
-              creating precision-engineered 2D and 3D models of buildings.
-              Established with a commitment to excellence and innovation, Swany
-              Engineering Works combines technical expertise with creative
-              vision to bring architectural concepts to life. At Swany
-              Engineering Works, our vision is to be a leading force in the
-              realm of architectural modeling, providing our clients with
-              cutting-edge solutions that transcend traditional boundaries. We
-              aspire to set new standards in the industry through our commitment
-              to quality, accuracy, and client satisfaction. Swany Engineering
-              Works aims to be the catalyst for transformative designs, ensuring
-              that every structure is brought to life in the virtual space
-              before breaking ground in the physical world. Our expert team
-              specializes in creating detailed and accurate 2D models, laying
-              the foundation for comprehensive project visualization and
-              planning. Harness the power of three-dimensional representation
-              with our advanced 3D modeling services. Experience your project in
-              a virtual environment, enabling better decision-making and
-              stakeholder communication.
-            </motion.p>
-          </div>
-        </motion.div>
-        <motion.div
-          className={`${profileStyle.videoContainer} ${profileStyle.video}`}
-          onViewportEnter={() => setProfImg(true)}
-        >
-          {/* <motion.div className={profileStyle.img}>
-          <motion.video src="/realestate.mp4" loop className={`video`} />
-          <div className={Styles.videoTextContainer}>
-            <div
-              className={Styles.play}
-              onClick={() => {
-                videoControl();
-              }}
-            >
-              <img
-                src="/button.png"
-                alt="About1"
-                className={`${Styles.pausebutton} play`}
-              />
-              <img
-                src="/pause.png"
-                alt="About1"
-                className={`${Styles.playbutton} pause`}
-              />
-            </div>
-          </div>
-        </motion.div> */}
-          <motion.img
-            src="/patrick-tomasso-gMes5dNykus-unsplash.jpg"
-            alt=""
-            className={profileStyle.img}
-            animate={
-              profimg
-                ? {
-                    y: 0,
-                    opacity: 1,
-                  }
-                : {
-                    y: "100vh",
-                    opacity: 0,
-                  }
-            }
-            transition={{
-              type: "tween",
-              duration: 1,
-              ease: "easeInOut",
-            }}
-          />
-        </motion.div>
-        <motion.div
-          className={mobstyle.heading}
-          animate={
-            proftext
-              ? {
-                  x: 0,
-                  opacity: 1,
-                }
-              : {
-                  x: "-100vw",
-                  opacity: 0,
-                }
-          }
-          transition={{
-            type: "tween",
-            duration: 1,
-            ease: "easeInOut",
-          }}
-        >
-          <h1 className={profileStyle.msg}>Company Profile</h1>
-        </motion.div>
-      </div>
 
+      <Profile />
       {/* CEO CODE */}
 
       <div className={ceoStyle.container} id="leadership">
@@ -362,14 +212,9 @@ export default function Aboutpage() {
         </motion.div>
       </div>
       <MD />
-      <Team />
       <Team2 />
       <Value />
       <About />
-      <Stand />
-      <Mission />
-      <Believe />
-      <Worth />
       <Vision id="vision" />
     </div>
   );

@@ -32,6 +32,7 @@ export default function Navbar2() {
   };
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isNavHovered, setIsNavHovered] = useState(false);
 
   const handleMouseEnter = () => {
     setIsOpen(true);
@@ -40,35 +41,43 @@ export default function Navbar2() {
   const handleMouseLeave = () => {
     setIsOpen(false);
   };
+
+  const handleNavHoverEnter = () => {
+    setIsNavHovered(true);
+  };
+
+  const handleNavHoverLeave = () => {
+    setIsNavHovered(false);
+  };
   return (
     <div>
       <div className={style.container}>
         <div className={style.logoContainer}>
           <div className={style.topLogo}>SW</div>
-          <div className={style.intro}>
-            <div className={style.top}>Swany</div>
-            <div className={style.bottom}>Engineering Solutions</div>
-          </div>
-          <div className={style.intro}>
-            <div className={style.top}>
-              Building For Tomorrow Constructing Today
-            </div>
-            <div className={style.bottom2}>
-              Your Complete Engineering Solution
-            </div>
+          <div className={style.locationContainer}>
+            <img src="/pin.png" alt="" className={style.whatsapp} />
+            <div className={style.address}>Florida United States</div>
           </div>
           <div className={style.contact}>
-            <a href="https://wa.me/+923334463813">
-              <img src="/whatsapp.png" alt="" className={style.whatsapp} />
+            <a
+              href="https://wa.me/+923334463813"
+              className={style.contactContainer}
+            >
+              <img src="/telephone.png" alt="" className={style.whatsapp} />
+              <div className={style.number}>+92-333-4463813</div>
             </a>
           </div>
         </div>
       </div>
       <motion.ul
-        className="nav nav-tabs justify-content-center"
+        className={`nav nav-tabs justify-content-center ${
+          isNavHovered ? style.navHovered : ""
+        }`}
         variants={parentNav}
         animate={"animate"}
         initial="initial"
+        onMouseEnter={handleNavHoverEnter}
+        onMouseLeave={handleNavHoverLeave}
       >
         <div className={style.logo}>
           <a
@@ -82,7 +91,11 @@ export default function Navbar2() {
             <div className={style.wname}>Engineering Solution</div>
           </a>
         </div>
-        <motion.li className={`nav-item ${style.listLi}`} variants={childNav}>
+        <motion.li
+          className={`nav-item ${style.listLi}`}
+          variants={childNav}
+          onMouseEnter={handleMouseLeave}
+        >
           <a className="nav-link" aria-current="page" href="/">
             Home
           </a>
@@ -100,17 +113,29 @@ export default function Navbar2() {
             About
           </a>
         </motion.li>
-        <motion.li className="nav-item" variants={childNav}>
+        <motion.li
+          className="nav-item"
+          variants={childNav}
+          onMouseEnter={handleMouseLeave}
+        >
           <a className="nav-link" href="/service">
             Services
           </a>
         </motion.li>
-        <motion.li className="nav-item" variants={childNav}>
+        <motion.li
+          className="nav-item"
+          variants={childNav}
+          onMouseEnter={handleMouseLeave}
+        >
           <a className="nav-link" href="/project">
             Projects
           </a>
         </motion.li>
-        <motion.li className="nav-item" variants={childNav}>
+        <motion.li
+          className="nav-item"
+          variants={childNav}
+          onMouseEnter={handleMouseLeave}
+        >
           <a className="nav-link" href="/contact">
             Contact Us
           </a>
@@ -205,13 +230,15 @@ export default function Navbar2() {
         </div>
       </div>
       {isOpen && (
-        <div className={style.dropdownContent} onMouseLeave={handleMouseLeave}>
+        <div
+          className={`${style.dropdownContent} drop`}
+          onMouseEnter={handleNavHoverEnter}
+          onMouseLeave={() => {
+            handleMouseLeave();
+            handleNavHoverLeave();
+          }}
+        >
           <div className={style.imgContainer}>
-            {/* <img
-              src="/andrade-YI_9SivVt_s-unsplash.jpg"
-              alt=""
-              className={style.img}
-            /> */}
             <div className={style.imgText}>
               <div className={style.imgHead}>About Swany</div>
               <div className={style.imgContent}>
@@ -233,6 +260,9 @@ export default function Navbar2() {
                 >
                   Bringing idea to life
                 </div>
+                <a href="/about" className={style.aboutLink}>
+                  Learn More About Us
+                </a>
               </div>
             </div>
           </div>

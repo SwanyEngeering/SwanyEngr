@@ -1,17 +1,22 @@
 .container {
   width: 100vw;
-  height: 70vh;
+  height: auto;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .headContainer {
-  width: 95%;
+  width: 100vw;
   margin: auto;
+  background-color: #e9a901;
+  text-align: center;
+  height: 5rem;
 }
 
 .head {
   font-size: 3rem;
+  padding-top: 0.5rem;
+  color: #32366d;
 }
 
 .mainContainer {
@@ -21,29 +26,25 @@
   height: 100%;
   gap: 1rem;
   padding-bottom: 2rem;
+  margin-top: 1rem;
 }
 
-.textContainer {
-  width: 30%;
-  height: 100%;
-  padding-top: 1rem;
-}
-
-.text {
-  margin-left: 0.1rem;
-  text-align: justify;
-}
 .expertiContainer {
-  width: 69%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.card {
+
+.cardContainer {
   width: 32%;
-  height: 10rem;
-  background: rgba(0, 0, 0, 0.7)
+  height: 20rem;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4)
     url("../../../public/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,14 +53,14 @@
   display: flex;
   transition: all 0.5s ease;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .cardHead {
-  color: whitesmoke;
+  color: #e9a901;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  padding-top: 0.5rem;
 }
 
 .cardText {
@@ -70,26 +71,17 @@
   width: 90%;
   margin: auto;
   transition: all 0.5s ease;
+  font-weight: 600;
 }
 
-.link {
-  text-decoration: none;
-  color: red;
-  text-align: center;
-}
 .btn {
   text-align: center;
-  background-color: darkblue;
+  background-color: #32366d;
   transition: all 0.5s ease;
   height: 2rem;
   overflow: hidden;
 }
 
-.card:hover .cardText {
-  height: 2rem;
-  overflow: hidden;
-}
-
 .card:hover .btn {
-  height: 5rem;
+  height: 15rem;
 }
