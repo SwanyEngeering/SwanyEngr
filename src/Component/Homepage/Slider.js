@@ -30,7 +30,6 @@ export default function App() {
   return (
     <>
       <Swiper
-        navigation={true}
         spaceBetween={30}
         grabCursor={true}
         effect={"creative"}
@@ -49,7 +48,7 @@ export default function App() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, Navigation, EffectCreative]}
+        modules={[Autoplay, EffectCreative]}
         className="mySwiper"
       >
         <SwiperSlide>

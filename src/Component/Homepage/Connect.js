@@ -14,8 +14,7 @@ export default function Connect() {
               Immerse yourself in captivating visuals that blend creativity with
               functionality. Our thoughtfully crafted designs harmonize
               aesthetics and user experience, delivering a visually stunning
-              journey through innovation. Welcome to a world where every pixel
-              tells a story.
+              journey through innovation.
             </div>
             <div className={style.linkContainer}>
               <a href="/contact" className={style.link}>

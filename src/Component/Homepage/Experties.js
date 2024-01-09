@@ -23,11 +23,11 @@ export default function Experties() {
             head
               ? {
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                 }
               : {
                   opacity: 0,
-                  x: "-100vw",
+                  y: "-100vh",
                 }
           }
           transition={{
@@ -66,12 +66,14 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>Engineering & Design</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque blanditiis, porro cupiditate sint quibusdam sed quam,
-                  expedita similique sequi illum harum ullam quod aspernatur
-                  corrupti doloribus sunt consequatur inventore omnis.{" "}
+                  In the realm of building construction, the symbiotic
+                  relationship between engineering and design plays a pivotal
+                  role in shaping the skylines of our cities and the
+                  functionality of our living spaces. Engineers bring their
+                  expertise to the table, applying principles of structural
+                  integrity, materials science, and construction methodologies
+                  to ensure buildings stand tall and resilient against various
+                  forces.
                 </div>
               </div>
             </motion.div>
@@ -83,7 +85,7 @@ export default function Experties() {
             }}
           >
             <motion.div
-              className={style.card}
+              className={`${style.card} ${style.architect}`}
               animate={
                 cardTwo
                   ? {
@@ -104,12 +106,13 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>Architecture</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Rem, adipisci optio? Aliquid, maiores officia aut suscipit,
-                  dolores nisi hic odio similique, quas repellendus esse totam
-                  porro? Harum consequatur quaerat consequuntur?{" "}
+                  Architecture in building construction is the art and science
+                  of designing structures that not only fulfill functional needs
+                  but also inspire awe through their form and aesthetics.
+                  Architects play a pivotal role in shaping the physical
+                  environment we inhabit, blending creativity with practicality
+                  to create spaces that are both visually striking and highly
+                  functional.
                 </div>
               </div>
             </motion.div>
@@ -121,7 +124,7 @@ export default function Experties() {
             }}
           >
             <motion.div
-              className={style.card}
+              className={`${style.card} ${style.construct}`}
               animate={
                 cardThree
                   ? {
@@ -142,12 +145,15 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>Construction</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Id, aliquam dolorem libero blanditiis, perferendis quos totam
-                  qui vel facilis mollitia modi et sit? Repudiandae esse
-                  officiis id deleniti, quia vitae!{" "}
+                  Construction in building construction is a multifaceted
+                  process that involves the systematic assembly of materials,
+                  labor, and technology to bring architectural visions to life.
+                  It encompasses a wide range of activities, from excavation and
+                  foundation work to the installation of intricate mechanical
+                  and electrical systems. The construction phase is where the
+                  meticulous plans devised by architects and engineers become a
+                  tangible reality, with skilled laborers and specialized
+                  machinery working in harmony.
                 </div>
               </div>
             </motion.div>
@@ -159,7 +165,7 @@ export default function Experties() {
             }}
           >
             <motion.div
-              className={style.card}
+              className={`${style.card} ${style.interior}`}
               animate={
                 cardFour
                   ? {
@@ -180,12 +186,14 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>Interior & Design</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Consectetur, eaque! Labore voluptatem autem aliquam eius
-                  repellat maiores. Tenetur saepe error numquam impedit aperiam
-                  deserunt atque eos. Quia delectus nostrum esse.{" "}
+                  Interior design in building construction plays a pivotal role
+                  in shaping spaces that harmonize functionality with
+                  aesthetics. Beyond the structural elements of a building,
+                  interior design focuses on creating environments that cater to
+                  the needs and preferences of occupants. Interior designers
+                  consider factors such as space utilization, lighting, color
+                  schemes, and furniture placement to enhance the overall
+                  ambiance and functionality of a space.
                 </div>
               </div>
             </motion.div>
@@ -197,7 +205,7 @@ export default function Experties() {
             }}
           >
             <motion.div
-              className={style.card}
+              className={`${style.card} ${style.modeling}`}
               animate={
                 cardFive
                   ? {
@@ -218,12 +226,14 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>3D Modeling</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque culpa doloremque vitae similique temporibus iste,
-                  accusamus iure dicta id incidunt delectus, odio assumenda
-                  doloribus, corrupti nostrum minus natus suscipit quos?{" "}
+                  3D modeling has revolutionized the landscape of building
+                  construction, offering architects, engineers, and stakeholders
+                  a powerful tool to visualize, plan, and execute construction
+                  projects with unprecedented precision. Through sophisticated
+                  computer-aided design (CAD) software, professionals can create
+                  detailed three-dimensional representations of structures,
+                  allowing for a comprehensive understanding of spatial
+                  relationships and design elements.
                 </div>
               </div>
             </motion.div>
@@ -235,7 +245,7 @@ export default function Experties() {
             }}
           >
             <motion.div
-              className={style.card}
+              className={`${style.card} ${style.project}`}
               animate={
                 cardSix
                   ? {
@@ -256,12 +266,14 @@ export default function Experties() {
               <div className={style.btn}>
                 <div className={style.cardHead}>Project Management</div>
                 <div className={style.cardText}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Labore, quidem architecto asperiores totam magnam aspernatur
-                  eum,Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Amet, sit non laboriosam, beatae odio magnam neque hic
-                  voluptate harum dicta iste exercitationem quasi impedit
-                  deserunt rerum quas ad eius minus.{" "}
+                  Project management plays a pivotal role in the successful
+                  execution of building construction projects, serving as the
+                  linchpin that aligns diverse stakeholders and ensures
+                  efficient progress from conception to completion. In the
+                  dynamic realm of construction, project managers are entrusted
+                  with coordinating multifaceted tasks, managing resources, and
+                  navigating challenges to deliver projects within scope, on
+                  time, and within budget.
                 </div>
               </div>
             </motion.div>

@@ -44,6 +44,15 @@ body {
 .nav-link {
   color: whitesmoke;
   cursor: pointer !important;
+  font-size: 1.2rem !important;
+}
+
+.nav-item:hover {
+  border: none !important;
+}
+
+.nav-link:hover {
+  color: #e9a901 !important;
 }
 
 .drawer {
@@ -67,8 +76,8 @@ body {
 
 .card {
   perspective: 1000px;
-  width: 19rem;
-  height: 19rem;
+  width: 20rem;
+  height: 18rem;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;

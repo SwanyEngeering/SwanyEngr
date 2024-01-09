@@ -13,9 +13,7 @@ export default function Choose() {
       </div>
       <div className={style.cardContainer}>
         <div className={style.card}>
-          <div className={style.cardHead}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </div>
+          <div className={style.cardHead}>FLEXIBLE PROJECT TIMELINES</div>
           <div className={style.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             ipsa ea fugit aperiam sapiente, deserunt facere sit harum repellat,
@@ -25,7 +23,7 @@ export default function Choose() {
         </div>
         <div className={style.card}>
           <div className={style.cardHead}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            TAILORED SOLUTIONS FOR EVERY CLIENT
           </div>
           <div className={style.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -35,9 +33,7 @@ export default function Choose() {
           </div>
         </div>
         <div className={style.card}>
-          <div className={style.cardHead}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </div>
+          <div className={style.cardHead}>EFFORTLESS ONBOARDING PROCESS</div>
           <div className={style.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             ipsa ea fugit aperiam sapiente, deserunt facere sit harum repellat,
@@ -47,7 +43,7 @@ export default function Choose() {
         </div>
         <div className={style.card}>
           <div className={style.cardHead}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            TIMELY AND RESPONSIVE CUSTOMER SUPPORT
           </div>
           <div className={style.text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis

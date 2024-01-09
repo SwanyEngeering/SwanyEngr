@@ -438,9 +438,11 @@ const Projects = () => {
   return (
     <div className={style.container}>
       <div className={style.heading}>Our Projects</div>
-      <div className={style.heading2}>
-        Our Professionals Leave a Lasting Impression
-      </div>
+      <a href="/project" className={style.linkButton}>
+        <button className={style.btn}>
+          View All <span className={style.arrow}> &rarr;</span>
+        </button>
+      </a>
       <div className={style.cardContainer} ref={cardsContainerRef}>
         <Swiper
           breakpoints={{
@@ -457,8 +459,8 @@ const Projects = () => {
               spaceBetween: 50,
             },
             1100: {
-              slidesPerView: 4,
-              spaceBetween: 0.5,
+              slidesPerView: 3,
+              spaceBetween: 50,
             },
           }}
           grabCursor={true}

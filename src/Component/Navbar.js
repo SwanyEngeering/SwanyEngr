@@ -70,7 +70,7 @@ export default function Navbar2() {
         </div>
       </div>
       <motion.ul
-        className={`nav nav-tabs justify-content-center ${
+        className={`nav justify-content-center ${
           isNavHovered ? style.navHovered : ""
         }`}
         variants={parentNav}
@@ -101,15 +101,11 @@ export default function Navbar2() {
           </a>
         </motion.li>
         <motion.li
-          className="nav-link"
+          className="nav-item"
           variants={childNav}
           onMouseEnter={handleMouseEnter}
         >
-          <a
-            aria-current="page"
-            href="/about"
-            style={{ textDecoration: "none", color: "whitesmoke" }}
-          >
+          <a aria-current="page" href="/about" className="nav-link">
             About
           </a>
         </motion.li>
@@ -245,20 +241,10 @@ export default function Navbar2() {
                 <div
                   style={{
                     fontWeight: "bold",
-                    textAlign: "center",
                     marginTop: "0.5rem",
                   }}
                 >
-                  We shape your vision through Design
-                </div>
-                <div
-                  style={{
-                    fontWeight: "bold",
-                    textAlign: "center",
-                    marginTop: "0.5rem",
-                  }}
-                >
-                  Bringing idea to life
+                  We shape your vision through Design. Bringing idea to life
                 </div>
                 <a href="/about" className={style.aboutLink}>
                   Learn More About Us
