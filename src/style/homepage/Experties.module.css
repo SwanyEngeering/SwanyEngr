@@ -8,7 +8,6 @@
 .headContainer {
   width: 100vw;
   margin: auto;
-  background-color: #e9a901;
   text-align: center;
   height: 5rem;
 }
@@ -16,7 +15,7 @@
 .head {
   font-size: 3rem;
   padding-top: 0.5rem;
-  color: #32366d;
+  font-weight: bold;
 }
 
 .mainContainer {
@@ -56,10 +55,30 @@
   justify-content: flex-end;
 }
 
+.architect {
+  background-image: url("../../../public/vu-anh-TiVPTYCG_3E-unsplash.jpg");
+}
+
+.construct {
+  background-image: url("../../../public/stephan-bechert-yFV39g6AZ5o-unsplash.jpg");
+}
+
+.interior {
+  background-image: url("../../../public/dillon-kydd-XGvwt544g8k-unsplash.jpg");
+}
+
+.modeling {
+  background-image: url("../../../public/sidekix-media-L6-yKzsrJzE-unsplash.jpg");
+}
+
+.project {
+  background-image: url("../../../public/rendy-novantino-btfixf2BbS0-unsplash.jpg");
+}
+
 .cardHead {
   color: #e9a901;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -76,12 +95,12 @@
 
 .btn {
   text-align: center;
-  background-color: #32366d;
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.5s ease;
-  height: 2rem;
+  height: 3.5rem;
   overflow: hidden;
 }
 
 .card:hover .btn {
-  height: 15rem;
+  height: 16.5rem;
 }

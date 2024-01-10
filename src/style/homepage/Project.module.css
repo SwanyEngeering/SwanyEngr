@@ -10,25 +10,21 @@
 .heading {
   font-size: 3rem;
   font-weight: bold;
-}
-
-.heading2 {
-  margin-top: 1rem;
-  font-size: 2rem;
+  text-align: center;
 }
 
 .cardContainer {
-  width: 100%;
-  height: 15rem;
-  margin-top: 1rem;
+  width: 83%;
+  height: 20rem;
+  margin: auto;
+  margin-top: 1.5rem;
   display: flex;
   gap: 0.7rem;
 }
 
 .card {
   height: 100%;
-  width: 30%;
-  background-color: brown;
+  width: 35%;
 }
 
 .img {
@@ -60,4 +56,35 @@
   position: absolute;
   bottom: 1rem;
   color: red;
+}
+
+.linkButton {
+  text-decoration: none;
+  color: black;
+  height: 48px;
+  position: absolute;
+  margin-top: 1.8rem;
+  right: 3rem;
+}
+
+.linkButton:hover .btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 2rem;
+  border: none;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 1.5em;
+  margin-left: 5px;
 }

@@ -80,7 +80,7 @@
 
 .dropdownContent {
   width: 100vw;
-  height: 10rem;
+  height: 12rem;
   display: flex;
   gap: 1rem;
   background-color: #32366d;
@@ -107,11 +107,14 @@
 
 .aboutLink {
   font-weight: bold;
-  text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   width: 100%;
   color: whitesmoke;
   display: block;
+}
+
+.about:hover {
+  color: #e9a901 !important;
 }
 
 /* .img {
@@ -132,9 +135,8 @@
 
 .imgText {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  margin-left: 1.5rem;
 }
 
 .imgHead {
@@ -142,6 +144,7 @@
   font-weight: bolder;
   font-size: larger;
   margin-top: 1rem;
+  font-size: 2rem;
 }
 
 .imgContent {

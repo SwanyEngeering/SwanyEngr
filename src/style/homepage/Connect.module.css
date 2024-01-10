@@ -25,6 +25,8 @@
   color: whitesmoke;
   font-size: 4rem;
   font-weight: bolder;
+  width: 25rem;
+  margin-left: 1rem;
 }
 
 .cardContainer {
@@ -34,8 +36,8 @@
 
 .card {
   background-color: whitesmoke;
-  height: 17rem;
-  width: 20rem;
+  height: 16rem;
+  width: 16rem;
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +48,7 @@
 
 .cardHead {
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   padding-top: 1rem;
 }

@@ -6,16 +6,16 @@
 }
 .carouselHead {
   text-transform: uppercase;
-  width: 35rem;
-  font-size: 2.5rem;
-  text-align: center;
+  width: 90%;
+  font-size: 6rem;
   text-transform: capitalize;
   font-family: "Nunito Sans", sans-serif;
+  text-shadow: -60px 0px 2px rgba(255, 255, 255, 0.3);
 }
 .sliderContainer {
   color: white;
   position: absolute;
-  top: 42%;
+  top: 35%;
   z-index: 99;
   font-weight: 700;
   width: 100vw;
