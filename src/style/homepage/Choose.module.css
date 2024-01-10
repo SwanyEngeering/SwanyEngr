@@ -38,12 +38,24 @@
   margin-top: 1rem;
   width: 49%;
   height: 12rem;
-  background: rgba(0, 0, 0, 0.7)
-    url("../../../public/copernico-p_kICQCOM4s-unsplash.jpg");
+  background: rgba(0, 0, 0, 0.65)
+    url("../../../public/lissete-laverde-7OFTxbGWqwk-unsplash.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.solution {
+  background-image: url("../../../public/lycs-architecture-kUdbEEMcRwE-unsplash.jpg");
+}
+
+.effort {
+  background-image: url("../../../public/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg");
+}
+
+.time {
+  background-image: url("../../../public/patrick-perkins-3wylDrjxH-E-unsplash.jpg");
 }
 
 .cardHead {
@@ -60,6 +72,7 @@
   margin: auto;
   text-align: justify;
   margin-top: 0.6rem;
+  font-size: small;
 }
 
 .logoContainer {
