@@ -1,10 +1,12 @@
 .container {
   width: 100vw;
   height: auto;
-  margin-top: 4rem;
+  background-color: rgb(217, 217, 217);
+  padding-bottom: 2rem;
 }
 
 .mainContainer {
+  padding-top: 4rem;
   width: 95%;
   height: 100%;
   display: flex;
@@ -16,7 +18,7 @@
 
 .textContainer {
   width: 50%;
-  height: 21rem;
+  height: 24rem;
   display: flex;
   flex-direction: column;
 }
@@ -31,6 +33,7 @@
   font-weight: bold;
   font-family: "Open Sans", Raleway;
   margin-left: 1rem;
+  color: rgb(31, 73, 125);
 }
 
 .text {
@@ -39,6 +42,8 @@
   margin: auto;
   margin-bottom: 0;
   height: 9rem;
+  margin-top: 1rem;
+  color: rgb(79, 129, 189);
 }
 
 .linkContainer {
@@ -59,7 +64,7 @@
 
 .aboutus {
   font-size: 1.2rem;
-  color: rgb(233, 169, 1);
+  color: rgb(31, 73, 125);
   font-weight: bold;
   margin-left: 1rem;
 }
@@ -67,7 +72,7 @@
 .line {
   margin-bottom: 0.5rem !important;
   margin-top: 0.5rem !important;
-  width: 8rem;
+  width: 10rem;
   margin-left: 1rem;
   background-color: #32366d;
   opacity: 1;

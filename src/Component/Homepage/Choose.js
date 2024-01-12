@@ -12,7 +12,7 @@ export default function Choose() {
         <div className={style.heading}>Why You Choose Us?</div>
       </div>
       <div className={style.cardContainer}>
-        <div className={`${style.card}`}>
+        <div className={`${style.card} ${style.top}`}>
           <div className={style.cardHead}>FLEXIBLE PROJECT TIMELINES</div>
           <div className={style.text}>
             Flexible project timelines represent a contemporary approach to
@@ -39,8 +39,7 @@ export default function Choose() {
             An effortless onboarding process is a cornerstone of a positive
             employee experience, setting the tone for a smooth integration into
             a new work environment. Such a process is characterized by its
-            simplicity, clarity, and efficiency, minimizing stress and
-            maximizing engagement.
+            simplicity, clarity, and efficiency, minimizing stress.
           </div>
         </div>
         <div className={`${style.card} ${style.time}`}>

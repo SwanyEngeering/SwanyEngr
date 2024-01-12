@@ -14,7 +14,7 @@ export default function About() {
         <div className={style.textContainer}>
           <div className={style.aboutus}>About Us</div>
           <div className={style.heading}>
-            Welcome To <br /> Swany Engineering Solutions
+            Welcome To <br /> Swany Engineering
           </div>
           <hr className={style.line} />
           <div className={style.text}>

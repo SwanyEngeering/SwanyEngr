@@ -58,7 +58,13 @@ export default function App() {
             initial={"hidden"}
             animate={"animate"}
           >
-            <div className={style.carouselHead}>Lost in transition?</div>
+            <div className={style.carouselHead}>
+              Building For Tommorow <br /> Construct Today
+            </div>
+            <div className={style.carouselText}>
+              Your Complete Engineering Solution <br /> Building that Serves
+              everyone includes everyone
+            </div>
             <motion.button
               whileTap={{
                 scale: 0.8,
@@ -81,7 +87,13 @@ export default function App() {
             initial={"hidden"}
             animate={"animate"}
           >
-            <div className={style.carouselHead}>Strategy in Transit</div>
+            <div className={style.carouselHead}>
+              Driven By Purpose <br /> Guided by People
+            </div>
+            <div className={style.carouselText}>
+              We are creating better world together. The power of design
+              knitting better community and culture.
+            </div>
             <motion.button
               whileTap={{
                 scale: 0.8,
@@ -100,7 +112,14 @@ export default function App() {
             initial={"hidden"}
             animate={"animate"}
           >
-            <div className={style.carouselHead}>What will your legacy be?</div>
+            <div className={style.carouselHead}>
+              Elevate The Human <br />
+              Experiences Through Design
+            </div>
+            <div className={style.carouselText}>
+              Our practice connects communities and is commited to the
+              stewardship of people, place and environment.
+            </div>
             <motion.button
               whileTap={{
                 scale: 0.8,

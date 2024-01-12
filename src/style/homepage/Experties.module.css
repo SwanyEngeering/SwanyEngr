@@ -89,6 +89,7 @@
   font-size: smaller;
   width: 90%;
   margin: auto;
+  height: 11rem;
   transition: all 0.5s ease;
   font-weight: 600;
 }
@@ -99,6 +100,13 @@
   transition: all 0.5s ease;
   height: 3.5rem;
   overflow: hidden;
+}
+
+.read {
+  text-align: end;
+  width: 95%;
+  display: block;
+  color: #e9a901;
 }
 
 .card:hover .btn {

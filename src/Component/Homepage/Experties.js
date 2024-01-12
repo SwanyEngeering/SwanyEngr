@@ -75,6 +75,9 @@ export default function Experties() {
                   to ensure buildings stand tall and resilient against various
                   forces.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -114,6 +117,9 @@ export default function Experties() {
                   to create spaces that are both visually striking and highly
                   functional.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -150,11 +156,11 @@ export default function Experties() {
                   labor, and technology to bring architectural visions to life.
                   It encompasses a wide range of activities, from excavation and
                   foundation work to the installation of intricate mechanical
-                  and electrical systems. The construction phase is where the
-                  meticulous plans devised by architects and engineers become a
-                  tangible reality, with skilled laborers and specialized
-                  machinery working in harmony.
+                  and electrical systems.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -195,6 +201,9 @@ export default function Experties() {
                   schemes, and furniture placement to enhance the overall
                   ambiance and functionality of a space.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -235,6 +244,9 @@ export default function Experties() {
                   allowing for a comprehensive understanding of spatial
                   relationships and design elements.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -275,6 +287,9 @@ export default function Experties() {
                   navigating challenges to deliver projects within scope, on
                   time, and within budget.
                 </div>
+                <a href="/about" className={style.read}>
+                  Read More
+                </a>
               </div>
             </motion.div>
           </motion.div>

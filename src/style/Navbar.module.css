@@ -83,7 +83,7 @@
   height: 12rem;
   display: flex;
   gap: 1rem;
-  background-color: #32366d;
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   z-index: 999;
   top: 7.2rem;
@@ -91,13 +91,13 @@
 }
 
 .navHovered {
-  background-color: #32366d !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .imgContainer {
   height: 100%;
   width: 50%;
-  background: rgba(50, 54, 109, 0.8)
+  background: rgba(0, 0, 0, 0.8)
     url("../../public/andrade-YI_9SivVt_s-unsplash.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@
   font-weight: bold;
   margin-top: 1rem;
   width: 100%;
-  color: whitesmoke;
+  color: #e9a901;
   display: block;
 }
 

@@ -240,7 +240,6 @@ export default function Navbar2() {
               <div className={style.imgContent}>
                 <div
                   style={{
-                    fontWeight: "bold",
                     marginTop: "0.5rem",
                   }}
                 >
