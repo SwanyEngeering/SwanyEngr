@@ -4,6 +4,13 @@ export default function About() {
   return (
     <div className={style.container}>
       <div className={style.mainContainer}>
+        <div className={style.mobHead}>
+          <div className={style.aboutus}>About Us</div>
+          <div className={style.heading}>
+            Welcome To <br /> Swany Engineering
+          </div>
+          <hr className={style.line} />
+        </div>
         <div className={style.imgContainer}>
           <img
             src="/copernico-p_kICQCOM4s-unsplash.jpg"
@@ -12,11 +19,13 @@ export default function About() {
           />
         </div>
         <div className={style.textContainer}>
-          <div className={style.aboutus}>About Us</div>
-          <div className={style.heading}>
-            Welcome To <br /> Swany Engineering
+          <div className={style.pcHead}>
+            <div className={style.aboutus}>About Us</div>
+            <div className={style.heading}>
+              Welcome To <br /> Swany Engineering
+            </div>
+            <hr className={style.line} />
           </div>
-          <hr className={style.line} />
           <div className={style.text}>
             Welcome to Swany Engineering, where innovation meets precision in
             the realm of architectural design. At Swany Engineering, we

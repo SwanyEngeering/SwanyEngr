@@ -57,11 +57,7 @@ body {
 
 .drawer {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  justify-content: space-between;
 }
 
 .offcanvas-header {
@@ -76,12 +72,27 @@ body {
 
 .card {
   perspective: 1000px;
-  width: 20rem;
-  height: 18rem;
+  width: 25.5rem;
+  height: 23rem;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  cursor: pointer;
+}
+
+.cardTextContainer {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+
+.card:hover .cardTextContainer {
+  height: 10rem;
 }
 
 .card-inner {
@@ -121,13 +132,28 @@ body {
     display: none;
   }
   .drawer {
-    display: block;
+    display: flex;
     height: 5rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0);
   }
   .btn {
-    position: fixed;
-    right: 0.7rem;
-    top: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .card {
+    width: 23rem;
+    height: 23rem;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .card {
+    width: 29rem;
+    height: 27rem;
+  }
+  .projectContainer {
+    height: 28rem;
   }
 }

@@ -214,3 +214,14 @@
     margin-left: 8rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .logo {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    position: relative;
+  }
+  .locationContainer {
+    display: none;
+  }
+}

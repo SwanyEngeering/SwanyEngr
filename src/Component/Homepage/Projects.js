@@ -443,7 +443,7 @@ const Projects = () => {
           View All <span className={style.arrow}> &rarr;</span>
         </button>
       </a>
-      <div className={style.cardContainer} ref={cardsContainerRef}>
+      <div className={style.projectContainer} ref={cardsContainerRef}>
         <Swiper
           breakpoints={{
             600: {
@@ -455,26 +455,26 @@ const Projects = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 50,
             },
             1100: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 0,
             },
           }}
-          grabCursor={true}
+          grabCursor={false}
           loop={true}
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           className={`mySwiper`}
-          autoplay={
-            autoplayEnabled
-              ? {
-                  delay: 2500,
-                  disableOnInteraction: true,
-                }
-              : false
-          }
+          // autoplay={
+          //   autoplayEnabled
+          //     ? {
+          //         delay: 2500,
+          //         disableOnInteraction: true,
+          //       }
+          //     : false
+          // }
           rewind={true}
         >
           {projectData.map((project) => {
@@ -483,13 +483,7 @@ const Projects = () => {
                 key={project._id}
                 onMouseLeave={() => setAutoplayEnabled(true)}
               >
-                <div
-                  key={project.id}
-                  className={`card ${
-                    flippedCards.includes(project.id) ? "flipped" : ""
-                  }`}
-                  onClick={() => handleCardClick(project.id)}
-                >
+                <div key={project.id} className={`card`}>
                   <div className="card-inner">
                     <div className="card-front">
                       <img
@@ -498,21 +492,10 @@ const Projects = () => {
                         className={style.img}
                       />
                     </div>
-                    <div className="card-back">
-                      <div className={style.cardBackText}>
-                        <div className={style.cardHead}>
-                          Project Name: {project.name}
-                        </div>
-                        <div className={style.loc}>
-                          Location: {project.location}
-                        </div>
-                        <div className={style.scope}>
-                          Scope: {project.scope}
-                        </div>
-                        <a href="#" className={style.link}>
-                          Read More
-                        </a>
-                      </div>
+                    <div className={`cardTextContainer`}>
+                      <a href="#" className={style.cardLink}>
+                        Read More
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -77,3 +77,57 @@
   background-color: #32366d;
   opacity: 1;
 }
+
+.mobHead {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 100%;
+    height: 20rem;
+  }
+  .mobHead {
+    display: block;
+  }
+  .pcHead {
+    display: none;
+  }
+  .heading {
+    margin-left: 0;
+    font-size: 2.65rem;
+  }
+  .line {
+    width: 18rem;
+    margin-left: 2rem;
+  }
+  .textContainer {
+    width: 100%;
+    height: 17rem;
+  }
+  .text {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .textContainer {
+    height: 34rem;
+  }
+  .text {
+    height: 16rem;
+  }
+  .heading {
+    font-size: 2.56rem;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .text {
+    height: 10rem;
+  }
+}

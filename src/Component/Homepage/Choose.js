@@ -50,8 +50,7 @@ export default function Choose() {
             Timely and responsive customer support stands as the cornerstone of
             a positive and enduring customer experience. In a fast-paced and
             interconnected world, businesses that prioritize prompt and
-            effective customer service distinguish themselves in the
-            marketplace.
+            effective customer service.
           </div>
         </div>
       </div>

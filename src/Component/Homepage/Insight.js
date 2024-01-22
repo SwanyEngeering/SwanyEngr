@@ -67,7 +67,7 @@ export default function Insight() {
             </a>
           </div>
         </div>
-        <div className={style.card}>
+        <div className={`${style.card} ${style.cardLast}`}>
           <img
             src="/patrick-tomasso-gMes5dNykus-unsplash.jpg"
             alt=""

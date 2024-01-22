@@ -112,3 +112,18 @@
 .card:hover .btn {
   height: 16.5rem;
 }
+
+@media screen and (max-width: 800px) {
+  .expertiContainer {
+    flex-direction: column;
+  }
+  .cardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  .cardContainer {
+    width: 48%;
+  }
+}

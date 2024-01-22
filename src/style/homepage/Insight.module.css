@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin-top: 4rem;
 }
 
@@ -102,4 +102,52 @@
 .arrow {
   font-size: 1.5em;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .box {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .cardHead {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .card1 {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardText {
+    margin-top: 1.5rem;
+    height: 7rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  .box {
+    flex-wrap: wrap;
+  }
+  .card1 {
+    width: 58%;
+    height: auto;
+  }
+  .card {
+    width: 39%;
+    height: auto;
+  }
+  .cardLast {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .cardText {
+    height: 14rem;
+  }
 }

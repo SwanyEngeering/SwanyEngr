@@ -16,7 +16,7 @@ export default function Values() {
             <div className={style.cardText}>We Are Driven To Acheive</div>
           </div>
           <div className={style.card}>
-            <div className={style.cardText}>We Love To Build</div>
+            <div className={style.cardText}>We Love To Build Future</div>
           </div>
         </div>
       </div>
