@@ -5,7 +5,7 @@ export default function Vision() {
     <div className={style.container}>
       <div className={style.mainContainer}>
         <div className={style.textContainer}>
-          <div className={style.head}>
+          <div className={`${style.head} ${style.pcHead}`}>
             <div className={style.heading}>Vision & Mission </div>
           </div>
           <div className={style.mobImgContainer}>
@@ -38,6 +38,9 @@ export default function Vision() {
             alt=""
             className={style.img}
           />
+        </div>
+        <div className={`${style.head} ${style.mobhead}`}>
+          <div className={style.heading}>Vision & Mission </div>
         </div>
       </div>
     </div>

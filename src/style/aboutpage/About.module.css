@@ -161,3 +161,26 @@
   box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.7);
   border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .box {
+    height: 67rem;
+  }
+  .mainContainer {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .textContainer {
+    width: 95%;
+    margin-top: 1rem;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .head {
+    height: 8rem;
+  }
+}

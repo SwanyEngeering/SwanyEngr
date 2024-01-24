@@ -50,3 +50,15 @@
   color: whitesmoke;
   font-size: 3.5rem;
 }
+
+@media screen and (max-width: 600px) {
+  .boxContainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .card {
+    height: 17rem;
+    width: 17rem;
+  }
+}

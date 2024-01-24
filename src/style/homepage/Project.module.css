@@ -62,9 +62,8 @@
   text-decoration: none;
   color: black;
   height: 48px;
-  position: absolute;
-  margin-top: 1.8rem;
-  right: 3rem;
+  align-self: flex-end;
+  margin-right: 2rem;
 }
 
 .linkButton:hover .btn {

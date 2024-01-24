@@ -364,7 +364,7 @@
 
 // export default Projects;
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import style from "../../style/homepage/Project.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -428,21 +428,16 @@ const Projects = () => {
     }
   };
 
-  useEffect(() => {
-    document.addEventListener("click", handleClickOutsideCards);
-    return () => {
-      document.removeEventListener("click", handleClickOutsideCards);
-    };
-  }, []); // Add flippedCards to dependencies if needed
+  // useEffect(() => {
+  //   document.addEventListener("click", handleClickOutsideCards);
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutsideCards);
+  //   };
+  // }, []);
 
   return (
     <div className={style.container}>
       <div className={style.heading}>Our Projects</div>
-      <a href="/project" className={style.linkButton}>
-        <button className={style.btn}>
-          View All <span className={style.arrow}> &rarr;</span>
-        </button>
-      </a>
       <div className={style.projectContainer} ref={cardsContainerRef}>
         <Swiper
           breakpoints={{
@@ -465,16 +460,16 @@ const Projects = () => {
           }}
           grabCursor={false}
           loop={true}
-          // modules={[Autoplay]}
+          modules={[Autoplay]}
           className={`mySwiper`}
-          // autoplay={
-          //   autoplayEnabled
-          //     ? {
-          //         delay: 2500,
-          //         disableOnInteraction: true,
-          //       }
-          //     : false
-          // }
+          autoplay={
+            autoplayEnabled
+              ? {
+                  delay: 2500,
+                  disableOnInteraction: true,
+                }
+              : false
+          }
           rewind={true}
         >
           {projectData.map((project) => {
@@ -483,7 +478,11 @@ const Projects = () => {
                 key={project._id}
                 onMouseLeave={() => setAutoplayEnabled(true)}
               >
-                <div key={project.id} className={`card`}>
+                <div
+                  key={project.id}
+                  className={`card`}
+                  onMouseEnter={() => setAutoplayEnabled(false)}
+                >
                   <div className="card-inner">
                     <div className="card-front">
                       <img
@@ -492,8 +491,11 @@ const Projects = () => {
                         className={style.img}
                       />
                     </div>
-                    <div className={`cardTextContainer`}>
-                      <a href="#" className={style.cardLink}>
+                    <div
+                      className={`cardTextContainer`}
+                      onMouseEnter={() => setAutoplayEnabled(false)}
+                    >
+                      <a href="/" className={style.cardLink}>
                         Read More
                       </a>
                     </div>
@@ -504,6 +506,11 @@ const Projects = () => {
           })}
         </Swiper>
       </div>
+      <a href="/project" className={style.linkButton}>
+        <button className={style.btn}>
+          View All <span className={style.arrow}> &rarr;</span>
+        </button>
+      </a>
     </div>
   );
 };

@@ -1,49 +1,27 @@
-import style from "../../style/aboutpage/header.module.css";
+import { useState } from "react";
+import bg from "../../style/homepage/Header.module.css";
 import { motion } from "framer-motion";
+import style from "../../style/servicepage/header.module.css";
 
-export default function header() {
-  const animateVariants = {
-    hidden: {
-      opacity: 0,
-      y: "10rem",
-    },
-    animate: {
-      opacity: 1,
-      y: "0rem",
-      transition: {
-        type: "spring",
-        stiffness: 140,
-        damping: 11,
-        duration: 0.3,
-        repeat: 0,
-      },
-    },
-  };
+export default function Header(props) {
   return (
     <>
-      <div className={style.container}>
-        <motion.div
-          className={style.heading}
-          variants={animateVariants}
-          initial={"hidden"}
-          animate={"animate"}
-        >
-          Services - Swany Engr
-        </motion.div>
-        <motion.div
-          className={style.linkContainer}
-          variants={animateVariants}
-          initial={"hidden"}
-          animate={"animate"}
-        >
-          <a href="/" className={`${style.link} ${style.home}`}>
-            Home
-          </a>
-          <span className={style.link}>||</span>
-          <a href="/service" className={`${style.link} ${style.about}`}>
-            Services
-          </a>
-        </motion.div>
+      <div className={`${bg.container} ${props.bg}`}>
+        <div className={style.box}>
+          <div className={style.logoContainer}>
+            <img
+              className={style.logo}
+              src="/dillon-kydd-XGvwt544g8k-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div className={style.headText}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione in
+            quis libero consequuntur. Voluptates officia ducimus rem saepe et
+            ratione rerum, placeat optio? Ipsam tempora deleniti nisi, totam
+            corrupti consequuntur.
+          </div>
+        </div>
       </div>
     </>
   );

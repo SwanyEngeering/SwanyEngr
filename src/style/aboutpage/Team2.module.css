@@ -1,7 +1,6 @@
 .container {
   width: 100vw;
   height: auto;
-  background-color: #dcdcdc;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 4rem;
@@ -22,7 +21,8 @@
 
 .heading {
   color: black;
-  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
   font-weight: bolder;
 }
 

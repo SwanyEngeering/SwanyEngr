@@ -75,6 +75,26 @@
   font-size: 1.05rem;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .boxContainer {
+    height: 28rem;
+  }
+  .textContainer {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .text {
+    width: 99%;
+  }
+  .msg {
+    font-size: 3rem;
+    height: 6rem;
+  }
+}
+
 /* 
 
 .heading {

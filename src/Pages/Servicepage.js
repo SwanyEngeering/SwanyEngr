@@ -1,4 +1,4 @@
-import Header from "../Component/Homepage/Header";
+import Header from "../Component/Servicepage/Header";
 import Believe from "../Component/Servicepage/Believe";
 import Stand from "../Component/Servicepage/Stand";
 import Team from "../Component/Aboutpage/Team2";

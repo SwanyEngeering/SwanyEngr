@@ -254,24 +254,32 @@ export default function Navbar2() {
           <div className={style.textContainer}>
             <div className={style.firstColumn}>
               <a href="/about/profile" className={style.dropLink}>
-                <div className={style.text}>Company Profile</div>
+                <div className={style.text}>Company OverView</div>
               </a>
               <a href="/about/leadership" className={style.dropLink}>
                 <div className={style.text}>Our Leadearship</div>
               </a>
               <a href="/about/mission" className={style.dropLink}>
-                <div className={style.text}>Our Mission</div>
+                <div className={style.text}>Meet Our Team</div>
               </a>
             </div>
             <div className={style.firstColumn}>
               <a href="/about/vision" className={style.dropLink}>
-                <div className={style.text}>Our Vision</div>
+                <div className={style.text}>Contact Us</div>
               </a>
               <a href="/about/value" className={style.dropLink}>
-                <div className={style.text}>Company Goals</div>
+                <div className={style.text}>Our Values & Culture</div>
               </a>
               <a href="/about/about" className={style.dropLink}>
-                <div className={style.text}>How it Works</div>
+                <div className={style.text}>How Can We Help You</div>
+              </a>
+            </div>
+            <div className={style.firstColumn}>
+              <a href="/about/vision" className={style.dropLink}>
+                <div className={style.text}>What Make Us Stand Out</div>
+              </a>
+              <a href="/about/value" className={style.dropLink}>
+                <div className={style.text}>Free Consultations</div>
               </a>
             </div>
           </div>
