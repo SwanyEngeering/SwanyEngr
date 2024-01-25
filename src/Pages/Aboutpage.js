@@ -212,9 +212,8 @@ export default function Aboutpage() {
         </motion.div>
       </div>
       <MD />
-      <Team2 />
       <Value />
-      <About />
+      <Team2 />
       <Vision id="vision" />
     </div>
   );

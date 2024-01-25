@@ -21,20 +21,13 @@
 } */
 
 .container {
-  width: 90vw;
-  height: 80vh;
+  width: 98vw;
+  height: 20rem;
   display: flex;
   font-family: "Nunito Sans", sans-serif;
-  margin: auto;
-  margin-top: 4rem;
-  padding-bottom: 2rem;
-  overflow: hidden;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  background: right rgba(255, 255, 255, 0.7)
-    url("../../../public/safety_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url("../../../public/SwanyEngineering.jpg");
+  background-size: cover;
+  margin-top: 3rem;
 }
 
 /* .imgContainer {
@@ -47,15 +40,10 @@
   width: 100%;
 } */
 
-.boxContainer {
-  width: 100%;
-  height: 80vh;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
 .textContainer {
-  height: 100%;
+  height: 80%;
   width: 65%;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,12 +55,15 @@
   padding-top: 1.3rem;
   font-weight: bold;
   color: #32366d;
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
 .text {
   width: 80%;
   text-align: justify;
   font-size: 1.05rem;
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 600px) {

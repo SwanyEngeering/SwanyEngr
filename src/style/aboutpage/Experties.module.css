@@ -15,7 +15,7 @@
 .headingContainer {
   width: 100vw;
   text-align: center;
-  background-color: rgb(233, 169, 1);
+  /* background-color: rgb(233, 169, 1); */
   height: 6rem;
   display: flex;
   align-items: flex-end;
